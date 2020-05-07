@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SemesterProject</string>
+    <string name="insertcoin">Insert Coin</string>
+    <string name="welcometext">Welcome to the Gacha</string>
+    <string name="earncoins">Earn Coins</string>
+    <string name="contentdesc">Gacha</string>
+    <string name="coincount">You have: X Coins</string>
+    <string name="selectiontitle">Play a game to earn coins</string>
+    <string name="tictactoe">Tic Tac Toe</string>
+    <string name="orderchaos">Order and Chaos</string>
+    <string name="hexapawn">Hexapawn</string>
+    <string name="rps">Rock Paper Scissors</string>
+    <string name="count21">Count to 21</string>
+    <string name="ballroll">Ball Rolling Minigame</string>
+    <string name="placeholder">Placeholder Text</string>
+    <string name="backbutton">Back</string>
+    <string name="playerX">X</string>
+    <string name="playerO">O</string>
+    <string name="whitepawn">[White Pawn]</string>
+    <string name="blackpawn">[Black Pawn]</string>
+    <string name="emptyspace"> </string>
+    <string name="rewardtext">You got a rare reward!</string>
+    <string name="item">Item Name</string>
+    <string name="sharebutton">Share to your friends!</string>
+    <string name="backtogacha">Back to Gacha</string>
+</resources>

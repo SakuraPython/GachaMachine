@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.semesterproject.TitleFragment"
+        android:label="TitleFragment" >
+        <action
+            android:id="@+id/action_titleFragment_to_selectionFragment"
+            app:destination="@id/selectionFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_listGachaItem"
+            app:destination="@id/listGachaItem" />
+        <action
+            android:id="@+id/action_titleFragment_to_rareRewardFragment"
+            app:destination="@id/rareRewardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.example.semesterproject.SelectionFragment"
+        android:label="SelectionFragment" >
+        <action
+            android:id="@+id/action_selectionFragment_to_tictactoeFragment"
+            app:destination="@id/tictactoeFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_hexapawnFragment"
+            app:destination="@id/hexapawnFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_orderChaosFragment"
+            app:destination="@id/orderChaosFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_RPSFragment"
+            app:destination="@id/RPSFragment" />
+        <action
+            android:id="@+id/action_selectionFragment_to_countToTwentyOne"
+            app:destination="@id/countToTwentyOne" />
+        <action
+            android:id="@+id/action_selectionFragment_to_ballRollFragment"
+            app:destination="@id/ballRollFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tictactoeFragment"
+        android:name="com.example.semesterproject.TictactoeFragment"
+        android:label="TictactoeFragment" >
+        <action
+            android:id="@+id/action_tictactoeFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hexapawnFragment"
+        android:name="com.example.semesterproject.HexapawnFragment"
+        android:label="HexapawnFragment" >
+        <action
+            android:id="@+id/action_hexapawnFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderChaosFragment"
+        android:name="com.example.semesterproject.OrderChaosFragment"
+        android:label="OrderChaosFragment" >
+        <action
+            android:id="@+id/action_orderChaosFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.semesterproject.ResultFragment"
+        android:label="ResultFragment" >
+        <action
+            android:id="@+id/action_resultFragment_to_titleFragment"
+            app:destination="@id/titleFragment"
+            app:popUpTo="@+id/titleFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="coinReward"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="no description" />
+    </fragment>
+    <fragment
+        android:id="@+id/RPSFragment"
+        android:name="com.example.semesterproject.RPSFragment"
+        android:label="RPSFragment" >
+        <action
+            android:id="@+id/action_RPSFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listGachaItem"
+        android:name="com.example.semesterproject.ListGachaItem"
+        android:label="ListGachaItem" />
+    <fragment
+        android:id="@+id/rareRewardFragment"
+        android:name="com.example.semesterproject.RareRewardFragment"
+        android:label="RareRewardFragment" >
+        <argument
+            android:name="uuid"
+            app:argType="string"
+            android:defaultValue="no data" />
+        <action
+            android:id="@+id/action_rareRewardFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countToTwentyOne"
+        android:name="com.example.semesterproject.CountToTwentyOne"
+        android:label="CountToTwentyOne" >
+        <action
+            android:id="@+id/action_countToTwentyOne_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ballRollFragment"
+        android:name="com.example.semesterproject.BallRollFragment"
+        android:label="BallRollFragment" >
+        <action
+            android:id="@+id/action_ballRollFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+</navigation>
